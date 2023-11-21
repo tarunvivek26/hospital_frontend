@@ -49,7 +49,7 @@ function App() {
   const [data,setData] = useState({fname:"",email:"",});
   const getUser = async() =>{
     try{
-      const response = await axios.post('http://localhost:5003/user/getUserData',
+      const response = await axios.post('https://mernback-2w9a.onrender.com/user/getUserData',
       {token : localStorage.getItem('token')},
       {headers:
         {Authorization: `Bearer ${localStorage.getItem('token')}`}
