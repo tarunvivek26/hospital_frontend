@@ -7,7 +7,7 @@ function Users(props) {
     const [user,setUser] = useState([]);
 
    useEffect(()=>{
-    axios.get('http://localhost:5003/admin/getAllUsers')
+    axios.get('https://mernback-2w9a.onrender.com/admin/getAllUsers')
     .then(users => setUser(users.data))
     .catch(err => console.log(err))
    },[])
@@ -34,7 +34,7 @@ function Users(props) {
                 <td>{pat.email}</td>
                 <td>
                   <button style={{backgroundColor:"red",color:"white",borderRadius:"7px"}} onClick={() =>{
-                        let url = "http://localhost:5003/user/delete-user/";
+                        let url = "https://mernback-2w9a.onrender.com/user/delete-user/";
                         const response =   axios
                            .delete(url + pat._id)
                            .then((res) => {
