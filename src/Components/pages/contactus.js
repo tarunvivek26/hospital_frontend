@@ -17,7 +17,7 @@ const Form = () => {
   let  submitFeedback = async (event) =>{
     event.preventDefault();
     try{
-        const response = await axios.post('http://localhost:5003/admin/feedback',feedback)
+        const response = await axios.post('https://mernback-2w9a.onrender.com/admin/feedback',feedback)
         if(response.data.success){
           {navigate('/')}
         }else{
