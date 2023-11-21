@@ -22,7 +22,7 @@ class Doctorusermini extends Component{
     const {doc} = this.props;
     const {naprrove} = this.state;
     const obj = {napprovedreason : naprrove,status : "Not Approved",iscancel:true}
-    const url = "http://localhost:5003/book/update-doctorbooked/" + doc._id;
+    const url = "https://mernback-2w9a.onrender.com/book/update-doctorbooked/" + doc._id;
     axios
       .put(url, obj)
       .then((res) => {
@@ -40,7 +40,7 @@ class Doctorusermini extends Component{
   deleted = async () =>{
     const {doc} = this.props;
     console.log(doc)
-    let url = "http://localhost:5003/book/delete-doctorbooked/";
+    let url = "https://mernback-2w9a.onrender.com/book/delete-doctorbooked/";
    const response =   axios
       .delete(url + doc._id)
       .then((res) => {
@@ -62,7 +62,7 @@ class Doctorusermini extends Component{
     }
     else{
       const obj = {doctorapproved : true,status : "Doctor approved",doctorFees : fee}
-      const url = "http://localhost:5003/book/update-doctorbooked/" + doc._id;
+      const url = "https://mernback-2w9a.onrender.com/book/update-doctorbooked/" + doc._id;
       axios
         .put(url, obj)
         .then((res) => {
