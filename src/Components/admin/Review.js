@@ -7,7 +7,7 @@ function Review(props) {
   const [feedback,setFeedback] = useState([]);
 
    useEffect(()=>{
-    axios.get('http://localhost:5003/admin/getAllFeedback')
+    axios.get('https://mernback-2w9a.onrender.com/admin/getAllFeedback')
     .then(users => setFeedback(users.data))
     .catch(err => console.log(err))
    },[])
