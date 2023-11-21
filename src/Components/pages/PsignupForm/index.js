@@ -18,7 +18,7 @@ function Signup() {
     event.preventDefault();
     console.log(login);
     try{
-        const response = await axios.post('http://localhost:5003/user/register',login)
+        const response = await axios.post('https://mernback-2w9a.onrender.com/user/register',login)
         if(response.data.success){
             console.log(`${response.data.message}`)
             {navigate('/plogin')}
