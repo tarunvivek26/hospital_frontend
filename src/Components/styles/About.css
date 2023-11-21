@@ -1,0 +1,103 @@
+.about{
+    padding: 5rem 3rem 3rem 3rem;
+    background: #f8f8f8;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row .column{
+    width: 40%;
+}
+.column .tabs{
+    display: flex;
+}
+.single-tab{
+    background: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.switch{
+    font-size: 16px;
+    position: right;
+    text-align: right;
+}
+.single-tab h2{
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+}
+.about-img{
+    position: relative;
+    background-image: url("../Images/aboutus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: 100%;
+}
+.bold{
+    color: #18dcff;
+}
+.element{
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+}
+.action{
+    display: flex;
+    height: 400px;
+}
+.content{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+.active-content{
+    display: block;
+}
+.active-tab{
+    background: #18dcff;
+    position: relative;
+}
+.active-tab::before{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #18dcff transparent transparent transparent;
+}
+.active-tab h2{
+    color: white;
+    font-size: 17px;
+    font-weight: 100%;
+}
+
+.content h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.content p{
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999;
+}
+.content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}

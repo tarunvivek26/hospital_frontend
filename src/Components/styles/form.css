@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapi s.com/css?family=Poppins: wght@300&di splay=swap');
+
+.form{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background: url(../Images/form.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*{
+  box-sizing: border-box;
+}
+
+.form-form{
+  /* display: block;
+  background-color: white;
+  box-shadow: 1px 1px 3px 2px #ddd;
+  margin: 120px auto;
+  max-width: 600px;
+  max-height: 900px;
+  padding: 20px 40px; */
+  width: 30%;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    color: #100606;
+    padding: 40px 35px 55px;
+    margin: 120px auto;  
+}
+.form-form input, textarea{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: 'Poppins';
+  background-color: rgba(255, 255, 255, .2);
+  border: 1.5px solid #ddd;
+  color: #100606;
+}
+
+.form-form span{
+  color: rgb(0, 179, 255);
+}
+
+.form-form button{
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  border: none;
+  background-color: rgb(0, 76, 255);
+  color: #ffff;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-top: 10px;
+}

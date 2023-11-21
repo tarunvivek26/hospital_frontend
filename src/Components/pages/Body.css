@@ -1,0 +1,22 @@
+.sec{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding:10px;
+    height: 400px ;
+  }
+  .head-con{
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pass{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    width: 500px;
+  }
+ 
