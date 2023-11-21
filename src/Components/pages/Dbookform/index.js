@@ -59,7 +59,7 @@ class Dbookform extends Component{
         napprovedreason : "",
         Payment :"Not done"
       }
-      const url = "http://localhost:5003/book/doctorbooked";
+      const url = "https://mernback-2w9a.onrender.com/book/doctorbooked";
     axios.post(url,obj).then((res) =>{
       console.log(res)
       if(res.status === 200){
