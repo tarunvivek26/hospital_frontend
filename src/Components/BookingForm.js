@@ -80,7 +80,7 @@ import Form from "react-bootstrap/Form";
     this.getApi()
   }
   getApi = async () =>{
-    const response = await fetch("http://localhost:5003/doctors");
+    const response = await fetch("https://mernback-2w9a.onrender.com/doctors");
     const data = await response.json();
     this.setState({
       doctorsObj : data,
