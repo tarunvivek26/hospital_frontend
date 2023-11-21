@@ -8,7 +8,7 @@ function Doctors(props) {
   const [doctor,setDoctor] = useState([]);
 
   useEffect(()=>{
-   axios.get('http://localhost:5003/admin/getAllDoctors')
+   axios.get('https://mernback-2w9a.onrender.com/admin/getAllDoctors')
    .then(users => setDoctor(users.data))
    .catch(err => console.log(err))
   },[])
@@ -33,7 +33,7 @@ function Doctors(props) {
                     <td>{doc.email}</td>
                     <td>
                   <button style={{backgroundColor:"red",color:"white",borderRadius:"7px"}} onClick={() =>{
-                        let url = "http://localhost:5003/doctors/delete-doctor/";
+                        let url = "https://mernback-2w9a.onrender.com/doctors/delete-doctor/";
                         const response =   axios
                            .delete(url + doc._id)
                            .then((res) => {
